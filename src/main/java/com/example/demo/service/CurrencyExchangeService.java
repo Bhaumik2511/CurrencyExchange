@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.dao.CurrencyDao;
-import com.example.demo.dao.RateDao;
 import com.example.demo.entity.Currency;
 
 @Service
@@ -15,8 +14,7 @@ public class CurrencyExchangeService {
 
 	@Autowired
 	CurrencyDao currencyDao;
-	@Autowired
-	RateDao ratesDao;
+
 	
 	public 	Currency saveCurrency(Currency currency) {
 		return currencyDao.save(currency);
