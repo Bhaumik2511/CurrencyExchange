@@ -1,25 +1,28 @@
-                                                                   --Project Instructions--
-                                                                   
+                                       --Project Execution Instructions--
 
 There are two endpoins
 ----------------------
- 
- -Load the currency exchange rate into database
+ #Load the currency exchange rate into database
       Hit URL on POST method
-      
       1) http://localhost:8081/currency-converter/{can-be-any-date}
-        
         -Example :- http://localhost:8081/currency-converter/2021-04-01
-         
          -There are validation on date
            a) Allow date till past 12 months 
            b) Allow 1st day of month date only 
            c) Not allow future date
  
- 
- 
- -Fetch currency exchage rates data in Json format as a result
+ #Fetch currency exchage rates data in Json format as a result
        Hit URL on GET method
-       
       1)Example :-  http://localhost:8081/currency-converter/daterange?from=2020-10-11&to=2021-08-11
-      
+
+
+#Access_key
+ -We can  change access_key from application.property file
+
+#DATABASE
+  - http://localhost:8081/h2-console (URL to check in memory database)
+  -JDBC URL: jdbc:h2:mem:demo
+  -User Name: Bhaumik123
+  -Password: admin123
+ 
+ -However, We can change username and passsword from applicaiton.property file
