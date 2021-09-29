@@ -30,7 +30,7 @@ public class CurrencyExchangeController {
 	@Value("${currency.exchange.access_key}")
     private String access_key;
 	
-	private static final String DATE_MSG = "Only last 12 months are included and allow 1st day of the month";
+	private static final String DATE_MSG = "Only last 12 months are included (Restricted  to the rate as of the 1st day of the month )";
 	private static final String SAVE_MSG = "Currency Exchange rate is saved for date ";
 	
 	@PostMapping("/{requestDate}")
