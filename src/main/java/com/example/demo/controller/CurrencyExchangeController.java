@@ -31,7 +31,7 @@ public class CurrencyExchangeController {
     private String access_key;
 	
 	private static final String DATE_MSG = "Only last 12 months are included (Restricted  to the rate as of the 1st day of the month )";
-	private static final String SAVE_MSG = "Currency Exchange rate is saved for date ";
+	private static final String SAVE_MSG = "Currency exchange rate is saved for date ";
 	
 	@PostMapping("/{requestDate}")
 	public ResponseEntity<String> convertcurrency(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate requestDate) {
