@@ -49,9 +49,7 @@ public class CurrencyExchangeController {
 	@GetMapping("/daterange")
 	public List<Currency>  getCurrencyData(@RequestParam("from") @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate from,
 									@RequestParam("to") @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate to) {
-		System.out.println("GET MAPPING IS CALLED");
 		return currencyExchangeService.findByDate(from,to);
-		
 	}
 	
 	
