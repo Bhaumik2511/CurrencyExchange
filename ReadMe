@@ -1,6 +1,6 @@
                                        --Project Execution Instructions--
 
-There are two endpoins
+There are two endpoints
 ----------------------
  #Load the currency exchange rate into database
       Hit URL on POST method
@@ -11,7 +11,7 @@ There are two endpoins
            b) Allow 1st day of month date only 
            c) Not allow future date
  
- #Fetch currency exchage rates data in Json format as a result
+ #Fetch currency exchange rates data in Json format as a result
        Hit URL on GET method
       1)Example :-  http://localhost:8081/currency-converter/daterange?from=2020-10-11&to=2021-08-11
 
